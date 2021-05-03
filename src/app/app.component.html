@@ -164,8 +164,8 @@
         <ng-container matColumnDef="action">
           <mat-header-cell *matHeaderCellDef mat-sort-header> Action </mat-header-cell>
           <mat-cell *matCellDef="let element">
-            <button pButton pRipple label="Delete" icon="pi pi-trash" class="p-button-danger"
-              (click)="deleteSelectedEmployee(element.uniqueid)"></button>
+           <button mat-raised-button color="warn" icon="pi pi-trash" class="p-button-danger"
+              (click)="deleteSelectedEmployee(element.uniqueid)">Delete</button>
           </mat-cell>
         </ng-container>
 
